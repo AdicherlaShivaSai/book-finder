@@ -32,8 +32,14 @@ book-finder/
 │   └── main.jsx              # React entry point
 ├── package.json
 └── tailwind.config.js
-
 ```
+
+---
+
+## 🌐 Live Demo
+
+The Book Finder app is deployed and can be accessed here:  
+[View Live on Render](https://book-finder-4ezv.onrender.com)
 
 ---
 
@@ -46,21 +52,33 @@ cd book-finder
 ```
 
 ### 2️⃣ Install dependencies
-Using npm:
-```bash
-npm install
-```
-Or using pnpm (recommended for Windows users):
+Using pnpm:
 ```bash
 pnpm install
 ```
 
 ### 3️⃣ Start the development server
 ```bash
-npm run dev
+pnpm run dev
 ```
 - Open the browser at `http://localhost:5173/` (or the port shown in terminal).  
 - You can now search books using the search bar.
+
+### 4️⃣ Build for production
+```bash
+pnpm build
+```
+- Production-ready files are generated in the `dist/` folder.  
+- Optional: Preview locally using `serve dist`.
+
+### 5️⃣ Deployment on Render
+1. Go to [Render](https://render.com/) and create a **Static Site**.  
+2. Connect your GitHub repository.  
+3. Set **Branch** (e.g., `main`) and configure:  
+   - **Build Command:** `pnpm install && pnpm build`  
+   - **Publish Directory:** `dist`  
+4. Click **Create Static Site** → Render builds and deploys.  
+5. Your live app URL can be shared under the **Live Demo** section above.
 
 ---
 
